@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+                                 http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+	<persistence-unit name="test" transaction-type="JTA">
+
+		<jta-data-source>test</jta-data-source>
+		<!-- <class>com.demo.Pokemon</class> <class>com.demo.PokemonType</class> -->
+
+		<class>com.spdp.entity.SubDivisionEntity</class>
+		<class>com.spdp.entity.PoliceDistrictEntity</class>
+		<class>com.spdp.entity.BlockEntity</class>
+		<class>com.spdp.entity.GpEntity</class>
+		<class>com.spdp.entity.BlockGpMapping</class>
+		<class>com.spdp.entity.SubDivisionBlockMapping</class>
+		<class>com.spdp.entity.PoliceDistrictCatagoryEntity</class>
+		<class>com.spdp.entity.PoliceSubDivision</class>
+		<class>com.spdp.entity.PoliceDistSdpoMappingEntity</class>
+		<class>com.spdp.entity.District</class>
+		<class>com.spdp.entity.RdcEntity</class>
+		<class>com.spdp.entity.RdcDistrictMapping</class>
+		<class>com.spdp.entity.RICircleEntity</class>
+		<class>com.spdp.entity.RICircleMasterEntity</class>
+		<class>com.spdp.entity.RiCircleVillageMapping</class>
+		<class>com.spdp.entity.TehsilRICircleMapping</class>
+		<class>com.spdp.entity.User</class>
+		<class>com.spdp.entity.ULBEntity</class>
+		<class>com.spdp.entity.PoliceStationMst</class>
+		<class>com.spdp.entity.PoliceDistrictMst</class>
+		<class>com.spdp.entity.PoliceSPDO_STAMapping</class>
+		<class>com.spdp.entity.TehsilEntity</class>
+		<class>com.spdp.entity.GPMappingEntity</class>
+		<class>com.spdp.entity.UrbanWardEntity</class>
+		<class>com.spdp.entity.EducationEntity</class>
+		<class>com.spdp.entity.EducationCourseEntity</class>
+		<class>com.spdp.entity.CasteMasterEntity</class>
+		<class>com.spdp.entity.policeStationEntity</class>
+		<class>com.spdp.entity.PoliceStnVillMapEntity</class>
+		<class>com.spdp.entity.GPVillageMapEntity</class>
+		<class>com.spdp.entity.DistrictEntity</class>
+		<class>com.spdp.entity.VillageEntity</class>
+		<class>com.spdp.entity.DistrictSubdivMapping</class>
+		<class>com.spdp.entity.BankEntity</class>
+		<class>com.spdp.entity.BankMasterEntity</class>
+		<class>com.spdp.entity.TypeOfUlbMst</class>
+		<class>com.spdp.entity.SchemeEntity</class>
+		<class>com.spdp.entity.DepartmentEntity</class>
+		<class>com.spdp.entity.PoliceRangeEntity</class>
+		<class>com.spdp.entity.PRangePDistMapping</class>
+
+
+
+		<properties>
+			<property
+				name="javax.persistence.schema-generation.database.action"
+				value="none" />
+			<!-- <property name="javax.persistence.sql-load-script-source" value="META-INF/init_script.sql" 
+				/> -->
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.Oracle10gDialect" />
+			<property name="hibernate.show_sql" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
