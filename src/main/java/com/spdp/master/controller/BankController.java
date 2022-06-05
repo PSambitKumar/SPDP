@@ -26,11 +26,6 @@ import org.json.JSONObject;
 import com.spdp.bean.BankBean;
 import com.spdp.bean.BankMasterBean;
 import com.spdp.service.BankService;
-
-
-
-
-
 /**
  * 
  * @Author : Akash Deep
@@ -40,7 +35,6 @@ import com.spdp.service.BankService;
 
 @Path("/api/r1")
 @RequestScoped
-
 public class BankController {
 	
 	@Inject
@@ -49,7 +43,6 @@ public class BankController {
 	@Path("/getBankDetailsForView")
 	@GET
 	public List<BankBean> getBankDetails() {
-   
 	return masterService.getDetailsByBankId();
 	}
 	
